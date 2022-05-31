@@ -4,6 +4,9 @@
     background: #EFE9E7;
     box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
     border-top: 3px solid #FF5E45;
+    @include mobile {
+        width: 80%;
+    }
     h5 {
         text-align: center;
         font-size: $h5;
@@ -13,6 +16,9 @@
     }
     .re-wrap {
         display: flex;
+        @include mobile {
+            display: block;
+        }
         .re-left {
             margin-bottom: 5px;
             flex: 1;
