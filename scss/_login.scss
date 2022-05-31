@@ -1,0 +1,81 @@
+.login {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    h4 {
+        margin: 0;
+        margin-top: 5px;
+        margin-bottom: 35px;
+        text-align: center;
+        font-size: $h4;
+        color: $main-color;
+    }
+    .login-box {
+        width: 30%;
+        margin: 0;
+        box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px 2.5%;
+        border-top: 3px solid #FF5E45;
+        h5 {
+            text-align: center;
+            font-size: $h5;
+            color: $main-color;
+            margin-top: 12px;
+            margin-bottom: 16px;
+        }
+        h6 {
+            font-size: $body-text;
+            color: $main-color;
+            margin: 0;
+            margin-top: 15px;
+            font-weight: 350;
+        }
+        input {
+            width: 100%;
+            margin: 0;
+            margin-top: 3px;
+            padding: 8px 0px;
+            text-indent: 10px;
+
+        }
+        span {
+            box-sizing: content-box;
+            font-size: $body-text-2;
+                color: $sub-color;
+                margin: 0;
+                margin-top: 1px;
+                margin-bottom: 30px;
+                font-weight: 345;
+                a {
+                    color: $sub-color;
+                }
+        }
+        .login-btn {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            button {
+                width: 45%;
+                padding: 6px 0px;
+            }
+            .btn1 {
+                color: $white-1;
+                background-color: rgba(0,0,0,0.35);
+            }
+            .btn2 {
+                background-color: $sub-color;
+                color: $white-1;
+            }
+        }
+        
+        
+    }
+}

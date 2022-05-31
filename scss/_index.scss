@@ -1,0 +1,313 @@
+
+.eCard {
+    padding-top: 50px;
+    width: 100%;
+    background-color: $bg-color;
+    .eCard-title {
+        margin: 0 auto;
+        width: 45%;
+        position: relative;
+        padding-top: 30px;
+        margin-bottom: 30px;
+        .eCard-title-box {
+            margin: 0 auto;
+            background-color: $bg-color;
+            position: absolute;
+            bottom: -35px;
+            right: calc((100% - 230px)/2);
+            z-index: 100;
+            h4 {
+                width: 200px;
+                text-align: center;
+                font-size: $h4;
+                line-height: 1.5;   
+                color: $main-color;
+                font-weight: 345;
+                padding: 0px 12px;
+            } 
+        }
+        .line {
+            width: 100%;
+            border: solid 0.5px #979797;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            z-index: 1;
+        }
+    }
+    ul {
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        padding: 30px 0px;
+        @include mobile {
+            display: block;
+            margin: 0 auto;
+        };
+        li {
+            width: 28%;
+            @include mobile {
+                display: block;
+                margin: 0 auto;
+                width: 81%;
+            };
+            .eCard-photo {
+                margin: 0 auto;
+                border-radius: 100px;
+                width: 200px;
+                height: 200px; 
+            }
+            .ep1 {
+               background-image: url(../assets/feature_1.png); 
+            }
+            .ep2 {
+                background-image: url(../assets/feature_2.png);
+            }
+            .ep3 {
+                background-image: url(../assets/feature_3.png);
+            }
+            h5 {
+                text-align: center;
+                font-size: $h5;
+                color: $main-color;
+                margin-top: 20px;
+                margin-bottom: 11px;
+            }
+            p {
+                font-size: $body-text;
+                color: $main-color;
+                @include mobile {
+                    margin-bottom: 30px;
+                };
+            }
+        }
+    }
+        
+}
+.chefIntro {
+    background-color: $main-color;
+    max-height: 460px;
+    @include mobile {
+        max-height: 987px;
+    }
+    .container-l {
+        max-height: 460px;
+        @include mobile {
+            max-height: 987px;
+        };
+        .container {
+            display: flex;
+            justify-content: space-between;
+            height: auto;
+            background-color: $main-color;
+            height: 460px;
+            @include pad{
+                width: 97%;
+            }
+            @include mobile {
+                display: block;
+                width: 100%;
+                height: 987px;
+            }
+            .chef-photo {
+                flex:1;
+                background-image: url(../assets/main_chef_brown.png);
+                background-size: cover;
+                @include mobile {
+                    height: 460px;
+                }
+            }
+            .chefIntro-text {
+                flex:1;
+                padding: 10% 0;
+                padding-left: 25px;
+                @include mobile {
+                    padding: 30px;
+                }
+                h4 {
+                    font-size: $h4;
+                    color: $white-2;
+                    margin: 0;
+                }
+                p {
+                    color: $white-2;
+                    font-size: $body-text;
+                    line-height: 1.5;
+                    margin-top: 16px;
+                }
+                span {
+                    color: $white-2;
+                    font-size: $body-text;
+                }
+            }
+        }
+    }
+    
+        
+}
+.comment {
+    padding-bottom: 50px;
+    h3 {
+        font-size: $h3;
+        text-align: center;
+        margin: 50px 0px 32px 0px;
+        color: $main-color;
+        font-weight: 330;
+    }
+    .cCard {
+        margin: 0 auto;
+        @include pad{
+            width: 97%;
+        };
+        ul{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            @include mobile{
+                display: block;
+                width: 90%;
+                margin: 0 auto;
+            };
+            li {
+                width: 33%;
+                display: flex;
+                align-items: flex-start;
+                @include mobile{
+                    width: 100%;
+                    margin-bottom: 30px;
+                };
+                .cCard-photo {
+                    width: 67px !important;
+                    height: 67px ;
+                    border-radius: 67px;
+                }
+                .cp1 {
+                    background-image: url(../assets/avatar_1.png);
+                }
+                .cp2 {
+                    background-image: url(../assets/avatar_2.png);
+                }
+                .cp3 {
+                    background-image: url(../assets/avatar_3.png);
+                }
+                .cCard-intro {
+                    flex: 8;
+                    padding: 30px 20px 0px 13px;
+                    h5 {
+                        color: $main-color;
+                        margin-bottom: 22px;
+                    }
+                    p {
+                        color: $main-color;
+                        margin-bottom: 16px;
+                    }
+                    span {
+                        float: right;
+                        color: $main-color;
+                        font-weight: 100;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.reserve {
+    background-color: $white-3;
+    opacity: 0.7;
+    .container-l {
+        h3 {
+            font-size: $h3;
+            text-align: center;
+            color: $main-color;
+            padding-top: 50px;
+            margin: 0;
+        }
+        .reserve-box {
+            margin-top: 38px;
+            display: flex;
+            padding-bottom: 50px;
+            @include pad{
+                width: 97%;
+            }
+            @include mobile{
+                display: block;
+                width: 90%;
+                margin: 0 auto;
+            };
+            .map {
+                flex:1;
+                background-image: url(../assets/Map.png);
+                background-size: cover;
+                @include mobile{
+                    width: 100%;
+                    height: 386px;
+                    margin: 30px 0px;
+                };
+            }
+            .input {
+                padding-left: 20px;
+                margin-right: 20px;
+                box-sizing: border-box;
+                flex:1;
+                @include mobile{
+                    padding: 0;
+                };
+                h6 {
+                    margin: 0;
+                }
+                input {
+                    margin-top: 6px;
+                    margin-bottom: 12px;
+                    width: 100%;
+                    padding: 8px 0px;
+                    padding-left: 12px;
+                }
+                .yn {
+                    margin-top: 8px;
+                    width: 50%;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin-right: 0;
+                    @include mobile {
+                        width: 35%;
+                        margin-bottom: 30px;
+                    };
+                    @include mobile-s {
+                        width: 50%;
+                        margin-bottom: 30px;
+                    };
+                    input {
+                        margin-left: -1%;
+                        margin-right: 16px;
+                    }
+                }
+                .btn {
+                    margin-top: 30px;
+                    display: flex;
+                    justify-content: flex-end;
+                    border-radius: 3px;
+                    margin-right: -16px;
+                    button {
+                        padding: 6px 0px;
+                        margin-left: 11px;
+                        width: 70px;
+                    }
+                    .btn1 {
+                        color: $white-1;
+                        background-color: rgba(0,0,0,0.35);
+                    }
+                    .btn2 {
+                        background-color: $sub-color;
+                        color: $white-1;
+                    }
+
+                }
+                
+            }
+        }
+    }
+}

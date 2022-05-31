@@ -1,0 +1,207 @@
+
+.container {
+    display: flex;
+    @include mobile {
+        display: block;
+        margin: 0 auto;
+    }
+    .sidebar {
+        flex:1;
+        padding-right: 20px;
+        @include mobile {
+
+        }
+        .sidebar-title {
+            padding-top: 58px;
+            padding-bottom: 8px;
+            display: flex;
+            img {
+                width: 27px;
+                margin-right: 15px;
+            }
+            h4 {
+                margin: 0;
+                font-size: $h4;
+                color: $main-color;
+            }
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+            li {
+                a {
+                    display: block;
+                    font-size: $body-text;
+                    color: $main-color;
+                    padding: 8px;
+                    border-bottom: solid 1px $main-color;
+                    &:hover {
+                        background-color: $main-color;
+                        color: $white-1;
+                    }
+                }
+            }
+        }
+    }
+    .cart {
+        flex: 3;
+        .search {
+            margin-top: 48px;
+            display: flex;
+            @include mobile {
+                display: block;
+            };
+            .searchBar {
+                flex: 2;
+                box-sizing: border-box;
+                border: solid 2px $main-color;
+                
+                .search-icon {
+                    float: right;
+                    padding: 5px 7px;
+                    background-color: $main-color;
+                    i {
+                        color: $white-1;
+                    }
+                }
+                @include mobile {
+                    display: block;
+                    height: 32px;
+                };
+            }
+            .check {
+                flex: 1;
+                display: flex;
+                justify-content: flex-end;
+                margin: 0;
+                @include mobile {
+                    width: 100%;
+                    margin-top: 20px;
+                }
+                .check-text {
+                    box-shadow: none;
+                    text-align: right; 
+                    margin: 0;
+                    display: flex;
+                    align-items: center;
+                    a {
+                        display: block;
+                        color: $main-color;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        p {
+                            margin: 0;
+                            font-size: $body-text;
+                            padding-right: 12px;
+                            border-right: solid 1px $main-color;
+                        }
+                        i {
+                            margin-left: 17px;
+                        }
+                    }
+                }
+
+                
+            }
+        }
+        .products {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 26px;
+            
+            .product {
+                position: relative;
+                margin-bottom: 30px;
+                background-color: #EFE9E7;
+                width: 32%;
+                box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
+                color: $main-color;
+                @include mobile {
+                    width: 47%;
+                    margin-top: 20px;
+                }
+                @include mobile-s {
+                    width: 100%;
+                    margin-top: 20px;
+                }
+                a {
+                    z-index: 2;
+                    width: 23px;
+                    position: absolute;
+                    top: 9px;
+                    left: 9px;
+                    i {
+                        color: #EFE9E7;
+                    }
+                    
+                }
+                .like {
+                    display: none;
+                }
+                .showw {
+                    display: block;
+                }
+                .hottag {
+                    width: 70px;
+                    position: absolute;
+                    top: -5px;
+                    right: -5px;
+
+                }
+                img {
+                    width: 100%;
+                    z-index: 1;
+                }
+                .price {
+                    font-family: Roboto-Light;
+                }
+                h4 {
+                    font-size: $h4;
+                    margin-top: 11px;
+                    margin-bottom: 0;
+                    text-align: center;
+                    font-weight: 345;
+                    i {
+                        font-weight: 900;
+                    }
+                }
+                p {
+                    margin: 0;
+                    font-size: 12px;
+                    text-align: center;
+                    margin-bottom: 8px;
+                }
+                .pline {
+                    margin: 0 auto;
+                    border-top: solid 1px $main-color;
+                    width: 40%;
+                    margin-bottom: 20px;
+                }
+                button {
+                    border: solid 2px $sub-color;
+                    width: 90%;
+                    display: flex;
+                    justify-content: center;
+                    margin: 0 auto;
+                    padding: 3px 0px;
+                    margin-top: 13px;
+                    margin-bottom: 10px;
+                    i {
+                        color: $sub-color;
+                    }
+                    p {
+                        font-size: $body-text;
+                        color: $sub-color;
+                        padding-left: 9px;
+                        margin: 0;
+                    }
+                }
+            }
+
+        }
+    }
+}

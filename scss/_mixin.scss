@@ -1,0 +1,33 @@
+
+// font
+$h1: 48px;
+$h2: 36px;
+$h3: 24px;
+$h4: 20px;
+$h5: 18px;
+$body-text: 16px;
+$body-text-2: 14px;
+
+// color
+$white-1: #ffffff;
+$white-2: #EFE9E7;
+$white-3: #fafafa;
+$bg-color: #efe9e7;
+$main-color: #3D1101;
+$sub-color: #F56C23;
+
+@mixin pad {
+    @media (max-width: 768px) {
+        @content;
+    }
+};
+@mixin mobile {
+    @media (max-width: 767px) {
+        @content;
+    }
+};
+@mixin mobile-s {
+    @media (max-width: 320px) {
+        @content;
+    }
+};

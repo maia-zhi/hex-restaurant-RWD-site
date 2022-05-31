@@ -1,0 +1,74 @@
+.regist-box {
+    width: 60%;
+    padding: 10px;
+    background: #EFE9E7;
+    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
+    border-top: 3px solid #FF5E45;
+    h5 {
+        text-align: center;
+        font-size: $h5;
+        color: $main-color;
+        margin: 11px;
+        
+    }
+    .re-wrap {
+        display: flex;
+        .re-left {
+            margin-bottom: 5px;
+            flex: 1;
+            padding: 5px;
+            p {
+                font-size: $h5;
+                color: $main-color;
+                margin: 0;
+            }
+        }
+        .re-right {
+            margin-left: 5px;
+            flex: 1;
+            padding: 5px;
+            .input1 {
+                margin-bottom: 15px;
+            }
+            .input2 {
+                margin-top: 12px;
+            }
+            h6 {
+                margin-bottom: 3px;
+                margin-top: 0;
+                font-size: $body-text;
+                color: $main-color;
+                font-weight: 350;
+            }
+
+            .btn2 {
+                width: 43%;
+                margin-top: 50px;
+                padding: 6px 0px;
+                background-color: $sub-color;
+                color: $white-1;
+                float: right;
+            }
+            input {
+                width: 100%;
+                padding: 8px 0px;
+                text-indent: 10px;
+            }
+            span {
+                box-sizing: content-box;
+                font-size: $body-text-2;
+                    color: $sub-color;
+                    margin: 0;
+                    margin-top: 1px;
+                    margin-bottom: 30px;
+                    font-weight: 345;
+                    a {
+                        color: $sub-color;
+                    }
+            }
+
+            
+        }
+    }
+
+}
