@@ -25,7 +25,10 @@
         padding: 0px 2.5%;
         border-top: 3px solid #FF5E45;
         @include mobile {
-            width: 75%;
+            width: 70%;
+        }
+        @include mobile-s {
+            width: 90%;
         }
         h5 {
             text-align: center;
