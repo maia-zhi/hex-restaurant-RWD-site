@@ -1300,6 +1300,16 @@ a {
   padding: 0px 2.5%;
   border-top: 3px solid #FF5E45;
 }
+@media (max-width: 767px) {
+  .login .login-box {
+    width: 70%;
+  }
+}
+@media (max-width: 320px) {
+  .login .login-box {
+    width: 90%;
+  }
+}
 .login .login-box h5 {
   text-align: center;
   font-size: 18px;
@@ -1364,6 +1374,11 @@ a {
           box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
   border-top: 3px solid #FF5E45;
 }
+@media (max-width: 767px) {
+  .regist-box {
+    width: 80%;
+  }
+}
 .regist-box h5 {
   text-align: center;
   font-size: 18px;
@@ -1374,6 +1389,11 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media (max-width: 767px) {
+  .regist-box .re-wrap {
+    display: block;
+  }
 }
 .regist-box .re-wrap .re-left {
   margin-bottom: 5px;
